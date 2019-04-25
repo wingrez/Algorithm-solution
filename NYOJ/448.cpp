@@ -25,6 +25,7 @@ int main(){
 				if(ans[j]<ans[j+1]){
 					flag=1;
 				}
+				else j++;
 			}
 		}
 		ans[m]='\0';
