@@ -31,5 +31,6 @@ int main(){
 		ans[m]='\0';
 		printf("%s\n",ans);
 	}
+	return 0;
 }
 
