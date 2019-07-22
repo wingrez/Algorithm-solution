@@ -2,13 +2,14 @@ class Solution {
 public:
     bool isPalindrome(int x) {
         if(x<0) return false;
-        int tx=x;
-        unsigned int sum=0;
-        while(tx){
-            sum=sum*10+tx%10;
-            tx/=10;
+        stringstream ss;
+        string str;
+        ss<<x;
+        ss>>str;
+        for(int i=0;i<str.size();i++){
+            if(str[i]!=str[str.size()-i-1])
+                return false;
         }
-        if(sum==x) return true;
-        return false;
+        return true;
     }
 };
